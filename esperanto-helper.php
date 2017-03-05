@@ -69,11 +69,11 @@ class EsperantoHelperPlugin extends Plugin
             "UX" => "\u{016c}"
         );
 
-        foreach( $esperanto_characters as $key => $value) {
+        foreach( $esperanto_characters as $key => $value ) {
             $content = str_replace($key, $value, $content);
         }
 
-        // Prepend the output with the custom text and set back on the page
+        // set the page content to the converted value
         $e['page']->setRawContent($content);
     }
 }
