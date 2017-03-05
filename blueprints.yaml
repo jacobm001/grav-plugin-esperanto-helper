@@ -1,0 +1,31 @@
+name: Esperanto Helper
+version: 0.1.0
+description: Some simple tools to make writing in Esperanto easier.
+icon: plug
+author:
+  name: Jacob Mastel
+  email: jacob@mastel.org
+homepage: https://github.com/jacobm001/grav-plugin-esperanto-helper
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/jacobm001/grav-plugin-esperanto-helper/issues
+docs: https://github.com/jacobm001/grav-plugin-esperanto-helper/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: Text Variable
+      help: Text to add to the top of a page
