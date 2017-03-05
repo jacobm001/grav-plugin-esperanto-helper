@@ -51,13 +51,29 @@ class EsperantoHelperPlugin extends Plugin
      */
     public function onPageContentRaw(Event $e)
     {
-        // Get a variable from the plugin configuration
-        $text = $this->grav['config']->get('plugins.esperanto-helper.text_var');
-
         // Get the current raw content
         $content = $e['page']->getRawContent();
+        
+        $esperanto_characters = array(
+            "cx" => "\u{0109}",
+            "CX" => "\u{0108}",
+            "gx" => "\u{011d}",
+            "GX" => "\u{011c}",
+            "hx" => "\u{0125}",
+            "HX" => "\u{0124}",
+            "jx" => "\u{0135}",
+            "JX" => "\u{0134}",
+            "sx" => "\u{015d}",
+            "SX" => "\u{015c}",
+            "ux" => "\u{016d}",
+            "UX" => "\u{016c}"
+        );
+
+        foreach( $esperanto_characters as $key => $value) {
+            $content = str_replace($key, $value, $content);
+        }
 
         // Prepend the output with the custom text and set back on the page
-        $e['page']->setRawContent($text . "\n\n" . $content);
+        $e['page']->setRawContent($content);
     }
 }
