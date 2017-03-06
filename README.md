@@ -1,7 +1,5 @@
 # Esperanto Helper Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of this plugin.**
-
 The **Esperanto Helper** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Some simple tools to make writing in Esperanto easier.
 
 ## Installation
@@ -38,11 +36,11 @@ enabled: true
 
 ## Usage
 
-**Describe how to use the plugin.**
+This plugin will automatically search the raw text of you webpage looking for Esperanto's standard [*x notation*](http://www.esperanto.net/veb/faq-15.html). Simply typing the desired character in x notation will automatically be rendered to its appropriate unicode character. 
 
-## Credits
+### Examples: 
 
-**Did you incorporate third-party code? Want to thank somebody?**
+- `cx` is rendered to `&#0109`
 
 ## To Do
 
