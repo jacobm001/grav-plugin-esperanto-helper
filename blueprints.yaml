@@ -25,7 +25,3 @@ form:
         0: Disabled
       validate:
         type: bool
-    text_var:
-      type: text
-      label: Text Variable
-      help: Text to add to the top of a page
