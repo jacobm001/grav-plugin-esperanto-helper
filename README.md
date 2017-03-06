@@ -38,9 +38,22 @@ enabled: true
 
 This plugin will automatically search the raw text of you webpage looking for Esperanto's standard [*x notation*](http://www.esperanto.net/veb/faq-15.html). Simply typing the desired character in x notation will automatically be rendered to its appropriate unicode character. 
 
-### Examples: 
+**Note:** To produce a capital letter, but the letter **and** the *x* must be capitalized.
 
-- `cx` is rendered to `&#0109`
+### Supported Characters: 
+
+- `cx` => `\u{0109}`
+- `CX` => `\u{0108}`
+- `gx` => `\u{011d}`
+- `GX` => `\u{011c}`
+- `hx` => `\u{0125}`
+- `HX` => `\u{0124}`
+- `jx` => `\u{0135}`
+- `JX` => `\u{0134}`
+- `sx` => `\u{015d}`
+- `SX` => `\u{015c}`
+- `ux` => `\u{016d}`
+- `UX` => `\u{016c}`
 
 ## To Do
 
