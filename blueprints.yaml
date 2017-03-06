@@ -6,10 +6,10 @@ author:
   name: Jacob Mastel
   email: jacob@mastel.org
 homepage: https://github.com/jacobm001/grav-plugin-esperanto-helper
-demo: http://demo.yoursite.com
+demo: 
 keywords: grav, plugin, etc
 bugs: https://github.com/jacobm001/grav-plugin-esperanto-helper/issues
-docs: https://github.com/jacobm001/grav-plugin-esperanto-helper/blob/develop/README.md
+docs: https://github.com/jacobm001/grav-plugin-esperanto-helper/blob/master/README.md
 license: MIT
 
 form:
