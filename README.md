@@ -1,6 +1,21 @@
 # Esperanto Helper Plugin
 
-The **Esperanto Helper** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Some simple tools to make writing in Esperanto easier.
+The **Esperanto Helper** Plugin is for [Grav CMS](http://github.com/getgrav/grav). In its current state, the plugin will replace *x notation* characters with their unicode equivalents during the render process. This will **not** change the source markdown files, merely the text as it is rendered.
+
+### Currently Supported Characters: 
+
+- `cx` => `\u{0109}`
+- `CX` => `\u{0108}`
+- `gx` => `\u{011d}`
+- `GX` => `\u{011c}`
+- `hx` => `\u{0125}`
+- `HX` => `\u{0124}`
+- `jx` => `\u{0135}`
+- `JX` => `\u{0134}`
+- `sx` => `\u{015d}`
+- `SX` => `\u{015c}`
+- `ux` => `\u{016d}`
+- `UX` => `\u{016c}`
 
 ## Installation
 
@@ -40,22 +55,9 @@ This plugin will automatically search the raw text of you webpage looking for Es
 
 **Note:** To produce a capital letter, but the letter **and** the *x* must be capitalized.
 
-### Supported Characters: 
-
-- `cx` => `\u{0109}`
-- `CX` => `\u{0108}`
-- `gx` => `\u{011d}`
-- `GX` => `\u{011c}`
-- `hx` => `\u{0125}`
-- `HX` => `\u{0124}`
-- `jx` => `\u{0135}`
-- `JX` => `\u{0134}`
-- `sx` => `\u{015d}`
-- `SX` => `\u{015c}`
-- `ux` => `\u{016d}`
-- `UX` => `\u{016c}`
-
 ## To Do
 
-- [ ] Future plans, if any
+- [x] Support standard *x notation* characters
+- [ ] Add in support for *h notation* characters
+- [ ] Look into support for an Esperanto spell checker to embed in the admin interface
 
