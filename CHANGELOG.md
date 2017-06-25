@@ -16,3 +16,9 @@
 
 1. [](#fixed)
     * Fixed the blueprint to include the updated version number
+
+# v1.0.2
+##  06/25/2017
+
+1. [](#changed)
+    * Changed the plugin icon
